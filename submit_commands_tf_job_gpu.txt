@@ -1,0 +1,17 @@
+sbatch tensorflow-test.sh
+sbatch minerl-train-gpu.sh
+
+squeue -u endeavor -t PENDING
+squeue -u endeavor -t RUNNING
+
+pip install -r requirements.txt
+
+https://docs.alliancecan.ca/wiki/Using_GPUs_with_Slurm
+
+
+pip install -U numpy 
+
+pip install protobuf==3.20.*
+
+pip install gym==0.19
+https://stackoverflow.com/questions/69198225/i-get-an-error-when-i-try-to-import-minerl
